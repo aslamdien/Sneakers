@@ -1,0 +1,181 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #464646;
+  font-weight: 300;
+  line-height: 25px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#homePage {
+  background-image: url(../images/banner.jpg);
+}
+
+/* Page Container Styles */
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+}
+
+/* Navigation Tooltip Styling */
+#fp-nav ul li .fp-tooltip {
+  color: white;
+  background-color: #222;
+  padding: 10px;
+}
+
+/* Navigation Styling */
+#fp-nav.fp-left {
+  background-color: #ed2d34;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 80px;
+}
+
+/* Product Page Styling, needed for modal */
+#productPage {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Coloring the navbar icons white */
+#fp-nav ul li a span,
+#fp-nav ul li a.active span {
+  background-color: white;
+  color: black;
+}
+
+/* Hide title and buttons */
+#product-slider h3,
+#product-slider button {
+  display: none;
+}
+
+/* Product slider active item setting */
+#product-slider .active h3,
+#product-slider .active button {
+  display: block;
+}
+
+/* Modal Styling */
+#modal {
+  display: none;
+}
+
+#modal.modal-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  z-index: 100;
+  width: 50vw;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+}
+/* Used to prevent the carousel from stretching the screen */
+.owl-carousel {
+  overflow: hidden;
+}
+
+/* PLEASE  START YOUR STYLES UNDERNEATH THIS */
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10%;
+}
+
+.home-details {
+  display: grid;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 40vh;
+  width: 60vh;
+}
+
+.home-heading {
+  color: #464646;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 54px;
+}
+
+.air {
+  color: #ed2d34;
+  width: fit-content;
+}
+
+.btn {
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 15px;
+  margin-right: 10%;
+  height: 5vh;
+  width: 17vh;
+  text-decoration-line: none;
+  transition: all 0.8s;
+}
+
+.btn:hover {
+  visibility: visible;
+  animation-delay: 0.8s;
+  background-color: #ed2d34;
+  color: white;
+  border: 3px solid #ed2d34;
+}
+
+.img1 {
+  max-width: 40vw;
+}
+
+.page-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40;
+}
+
+.page-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
