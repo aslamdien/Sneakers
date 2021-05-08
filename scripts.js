@@ -17,7 +17,7 @@ $(document).ready(function () {
   $("#product-slider").owlCarousel({
     items: 1,
     margin: 0,
-    stagePadding: 200,
+    stagePadding: 350,
     loop: true,
     dots: false,
     //   autoplay: true,

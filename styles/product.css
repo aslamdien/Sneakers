@@ -1,0 +1,172 @@
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 40px;
+  gap: 90px;
+}
+
+.page-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-heading {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 40px;
+  gap: 330px;
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbers {
+  font-size: 45px;
+  font-weight: 50;
+}
+
+.img2 {
+  max-width: 25vw;
+}
+
+.img3 {
+  max-width: 20vw;
+}
+
+.img4 {
+  max-width: 20vw;
+}
+
+.img5 {
+  height: 45vh;
+  max-width: 45vw;
+}
+
+.img6 {
+  max-width: 10vw;
+}
+
+.img7 {
+  height: 20vw;
+  max-width: 30vw;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#product-slider {
+  max-width: 70%;
+}
+
+.btn2 {
+  background-color: white;
+  color: #222;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 10px;
+  text-decoration-line: none;
+  transition: all 0.8s;
+}
+
+.btn2:hover {
+  visibility: visible;
+  animation-delay: 0.5s;
+  background-color: #ed2d34;
+  color: white;
+  border: 3px solid #ed2d34;
+}
+
+.close {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+/* Modal styling below */
+.product-info {
+  height: 80%;
+  margin-top: 3%;
+  width: 80%;
+}
+
+.shoe-name {
+  margin-bottom: 3%;
+}
+
+.par {
+  margin-top: 5%;
+}
+
+.product-model {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #202020;
+}
+
+.sizes {
+  display: flex;
+  font-size: 30px;
+  font-weight: 200;
+  gap: 40px;
+  margin-top: 5%;
+  margin-bottom: 8%;
+}
+
+.row {
+  display: flex;
+  font-size: 30px;
+  font-weight: 200;
+  gap: 40px;
+  margin-bottom: 8%;
+}
+
+.color-picker {
+  display: flex;
+}
+
+.product-name {
+  color: #ed2d34;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.text-center {
+  color: #ed2d34;
+  gap: 10px;
+}
+
+.price-model {
+  color: #ed2d34;
+}
+.count {
+  width: 3vw;
+}
+
+.price-model {
+  margin-bottom: 5%;
+}

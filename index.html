@@ -61,6 +61,11 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/product.css" />
+    <script>
+      src = "https://kit.fontawesome.com/d85f3a3d4a.js";
+      crossorigin = "anonymous";
+    </script>
   </head>
   <body>
     <div id="fullpage">
@@ -91,21 +96,25 @@
         <!-- Add classes where necessary and style the section appropriately -->
         <div id="productPage" class="content">
           <header class="page-header-container">
-            <div>
-              <h2 class="page-heading">Premium <span>Shoe Collection</span></h2>
-            </div>
-            <div class="numbers">
-              <div class="amount">
-                <span>100</span>
-                <h3>Shoes Delivered</h3>
+            <div class="page-title">
+              <div>
+                <h2 class="page-heading">
+                  Premium <span class="air">Shoe Collection</span>
+                </h2>
               </div>
-              <div class="amount">
-                <span>100</span>
-                <h3>New Articles</h3>
-              </div>
-              <div class="amount">
-                <span>100</span>
-                <h3>Happy Customers</h3>
+              <div class="progress">
+                <div class="amount">
+                  <span class="numbers">465</span>
+                  <h5>Shoes Delivered</h5>
+                </div>
+                <div class="amount">
+                  <span class="numbers">560</span>
+                  <h5>New Articles</h5>
+                </div>
+                <div class="amount">
+                  <span class="numbers">768</span>
+                  <h5>Happy Customers</h5>
+                </div>
               </div>
             </div>
           </header>
@@ -113,37 +122,163 @@
           <div id="product-slider" class="owl-carousel">
             <!-- Product Item -->
             <div class="product">
-              <img src="./images/sneaker1.png" alt="Sneaker" />
-              <h3>White Chucks</h3>
-              <button onclick="openModal()">View Detail</button>
+              <img
+                src="./images/sneaker3-removebg-preview.png"
+                alt="Sneaker"
+                class="img7"
+              />
+              <h3 class="product-sub">White Chucks</h3>
+              <button onclick="openModal()" class="btn2">View Detail</button>
             </div>
             <!-- Product Item -->
             <div class="product">
-              <img src="./images/sneaker1.png" alt="Sneaker" />
-              <h3>White Chucks</h3>
-              <button onclick="openModal()">View Detail</button>
+              <img
+                src="./images/Nike-Swoosh-clipart-White_-Product_-transparent-clip-art-removebg-preview.png"
+                alt="Sneaker"
+                class="img4"
+              />
+              <h3 class="product-sub">White Chucks</h3>
+              <button onclick="openModal()" class="btn2">View Detail</button>
             </div>
             <!-- Product Item -->
             <div class="product">
-              <img src="./images/sneaker1.png" alt="Sneaker" />
-              <h3>White Chucks</h3>
-              <button onclick="openModal()">View Detail</button>
+              <img src="./images/sneaker2.png" alt="Sneaker" class="img2" />
+              <h3 class="product-sub">White Chucks</h3>
+              <button onclick="openModal()" class="btn2">View Detail</button>
             </div>
             <!-- Product Item -->
             <div class="product">
-              <img src="./images/sneaker1.png" alt="Sneaker" />
-              <h3>White Chucks</h3>
-              <button onclick="openModal()">View Detail</button>
+              <img src="./images/sneaker1.png" alt="Sneaker" class="img2" />
+              <h3 class="product-sub">White Chucks</h3>
+              <button onclick="openModal()" class="btn2">View Detail</button>
             </div>
           </div>
-          <div id="modal">
-            <!-- Add modal content here. Please pay careful 
-                attention to layout and styling, and please ignore any functionality 
-                eg: switching images on click.
-                *PS* you do not have to create multiple of these, they should all look the same -->
-            <h2>Modal Content</h2>
-            <!-- Button to close modal. Please style appropriately -->
-            <button onclick="openModal()">Close</button>
+          <!-- Modal -->
+          <div id="modal" class="modal-a">
+            <button onclick="openModal()" class="close">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="product-img">
+              <img src="./images/sneaker1.png" alt="Sneaker" class="img5" />
+              <img
+                src="./images/sneaker3-removebg-preview.png"
+                alt="Sneaker"
+                class="img6"
+              />
+              <img
+                src="./images/Nike-Swoosh-clipart-White_-Product_-transparent-clip-art-removebg-preview.png"
+                alt="Sneaker"
+                class="img6"
+              />
+              <img src="./images/sneaker2.png" alt="Sneaker" class="img6" />
+            </div>
+            <div class="product-info">
+              <div class="shoe-name">
+                <h5 class="product-model">Article SV-1000-24</h5>
+                <h3 class="product-name">White Stack</h3>
+                <p class="par">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Soluta nostrum tempora culpa. Quam, recusandae velit
+                  voluptate, dolor iusto, sequi doloribus repudiandae tenetur
+                  nulla nihil esse perspiciatis eius voluptatum modi at.
+                </p>
+              </div>
+              <div class="sizes">
+                <!-- Sizes -->
+                <h6 class="text-center">Sizes:</h6>
+
+                <h6 class="active" style="opacity: 0.4">38</h6>
+                <h6 style="opacity: 0.4">39</h6>
+                <h6 style="opacity: 0.4">40</h6>
+                <h6 style="opacity: 0.4">41</h6>
+                <h6 style="opacity: 0.4">42</h6>
+                <h6 style="opacity: 0.4">43</h6>
+                <h6 style="opacity: 0.4">44</h6>
+                <h6 style="opacity: 0.4">45</h6>
+              </div>
+              <div class="row pb-4">
+                <!-- Quality -->
+                <div class="size1">
+                  <div class="size-select">
+                    <h6 class="text-center">Qty:</h6>
+                  </div>
+                </div>
+                <div class="item-amount">
+                  <div class="qty">
+                    <span class="minus bg-dark"
+                      ><i class="lni-minus"></i>
+                    </span>
+
+                    <input class="count" type="number" name="qty" value="1" />
+
+                    <span class="plus bg-dark"></span>
+
+                    <i class="lni-plus"></i>
+                  </div>
+                </div>
+                <!-- color-picker -->
+                <div class="sizes1">
+                  <div class="size-select">
+                    <h6 class="text-center">Color</h6>
+                  </div>
+                </div>
+                <div class="color-picker text-center text-center">
+                  <!-- color1 -->
+                  <div class="color-picker_item">
+                    <input
+                      id="input4"
+                      class="color-picker_input"
+                      type="radio"
+                      name="color-input"
+                      value="1"
+                    />
+                    <label
+                      class="color-picker_color color-picker_color--white"
+                      for="input4"
+                    ></label>
+                  </div>
+                  <!-- color2 -->
+                  <div class="color-picker_item">
+                    <input
+                      id="input5"
+                      class="color-picker_input"
+                      type="radio"
+                      name="color-input"
+                      value="4"
+                    />
+                    <label
+                      class="color-picker_color color-picker_color--color2"
+                      for="input5"
+                    ></label>
+                  </div>
+                  <!-- color3 -->
+                  <div class="color-picker_item">
+                    <input
+                      id="input6"
+                      class="color-picker_input"
+                      type="radio"
+                      name="color-input"
+                      value="7"
+                    />
+                    <label
+                      class="color-picker_color color-picker_color--color5"
+                      for="input6"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+              <div class="price-model">
+                <h1>$180.00</h1>
+              </div>
+              <div class="btn-modal">
+                <a
+                  class="btn btn-medium btn-rounded btn-trans text-capitalize"
+                  target="_blank"
+                  href="www.amamzon.com/"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
