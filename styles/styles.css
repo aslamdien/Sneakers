@@ -15,8 +15,11 @@ body {
   overflow-x: hidden;
 }
 
-#homePage {
+.section {
   background-image: url(../images/banner.jpg);
+}
+
+#homePage {
   padding: 10%;
 }
 
